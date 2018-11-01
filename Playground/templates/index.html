@@ -1,0 +1,42 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Play</title>
+    <style>
+        .div{
+            background-color: rgb(28, 95, 238);
+            display: inline-block;
+            width: 23%;
+            height: 23%;
+            margin: 5px;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            height:100%;
+            margin-left: 20px;
+            color: blue
+
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Welcome!!</h1>
+    <div class="container">
+    {% for i in range(0,repeat):%}
+        <div class="div"></div>
+    {% endfor%}
+
+    {% for i in range(0,times):%}
+        <div class="div" style="background-color:{{ paint }}"></div>
+        {% endfor%}
+    </div>
+    
+</body>
+</html>
